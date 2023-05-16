@@ -1,3 +1,6 @@
+import math
+
+
 baddata = True
 while baddata == True:
     try:
@@ -10,8 +13,12 @@ while baddata == True:
 D = (b*b) - (4 * a * c)
 if D > 0:
       print('два кеорня')
+      d = math.sqrt(D)
+      x1 = ((-b) + d) / (2*a)
+      x2 = ((-b) - d) / (2 * a)
 elif D == 0:
     print('один корень')
+    x1 = (-b) / (2 * a)
 else:
     print('нет корней')
 
